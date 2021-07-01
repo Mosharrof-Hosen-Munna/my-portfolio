@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.section {
+  padding: 100px 0px;
+}
+/* navbar styles */
+nav {
+  background: transparent;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: 0.5s;
+}
+.sticky {
+  background: #0779e4;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li {
+  list-style: none;
+}
+
+.container-wrapper {
+  overflow: hidden;
+  display: flex;
+  line-height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul.list-group {
+  display: flex;
+}
+
+ul.list-group li a {
+  padding: 30px 15px;
+  line-height: 45px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #eaeaea;
+  transition: 0.3s;
+}
+
+ul.list-group li {
+  margin: 0px 10px;
+}
+.nav-brand {
+  height: 80px;
+  line-height: 80px;
+  font-size: 25px;
+  font-weight: 500;
+}
+ul.list-group li a:hover {
+  color: white;
+}
+/* /navbar styles */
+
+/* intro section styles start */
+.intro-section {
+  background: url("../images/xbg_1.jpg.pagespeed.ic.LOd_TK0d0a.webp");
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.intro-wrapper {
+  overflow: hidden;
+}
+
+.intro-content {
+  margin-top: 250px;
+}
+
+.top-content span {
+  color: #51a0e9;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  position: relative;
+  font-weight: 600;
+}
+
+.top-span::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 3px solid white;
+  background: white;
+  transform: rotate(45deg);
+  left: 45%;
+  bottom: -5px;
+}
+.top-content h1 {
+  font-size: 45px;
+  font-weight: 400;
+  color: white;
+}
+
+.top-content p {
+  width: 614px;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 500;
+  color: #dadada;
+}
+
+button.hire-btn {
+  padding: 17px 22px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  background: #0779e4;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+button.hire-btn:hover {
+  box-shadow: 0px 0px 22px 0px #ffffff12;
+}
+
+button.view-btn {
+  padding: 17px 22px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #0779e4;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button.view-btn:hover {
+  box-shadow: 0px 0px 22px 0px #0779e481;
+}
+.social-links {
+  margin-top: 50px;
+}
+
+.social-links a {
+  font-weight: 600;
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* intro section styles end */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+.left-content {
+  width: calc(50% - 40px);
+  margin: auto;
+}
+.left-img {
+  background: url("../images/xabout.jpg.pagespeed.ic.ROjPXqaKV7.webp");
+  width: 464px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 600px;
+  position: relative;
+}
+
+.right-content {
+  width: calc(50% - 40px);
+  margin: auto;
+}
+.btn-all {
+  padding: 14px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  font-weight: 700;
+  color: dimgrey;
+}
+
+button.about-btn.btn-all.active {
+  background: #0779e4;
+  color: white;
+}
+
+.about-content h1 {
+  font-size: 44px;
+  color: #4a4a4a;
+}
+
+.about-content p {
+  font-size: 19px;
+  line-height: 32px;
+  color: #b3b3b3;
+}
+
+.about-content h2 {
+  font-size: 30px;
+  color: #4a4a4a;
+  margin-bottom: 40px;
+}
+
+.left-content.left-img:before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 100px;
+  background: #89c4fb;
+  bottom: 133px;
+  left: -35px;
+  z-index: -5;
+}
+
+.left-content.left-img:after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 100px;
+  background: #57abfa;
+  bottom: 33px;
+  left: -35px;
+  z-index: -1;
+}
