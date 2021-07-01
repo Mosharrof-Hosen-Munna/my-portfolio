@@ -103,7 +103,7 @@ ul.list-group li a:hover {
   margin-top: 250px;
 }
 
-.top-content span {
+.top-content .top-span {
   color: #51a0e9;
   background: white;
   padding: 10px;
@@ -217,7 +217,16 @@ button.about-btn.btn-all.active {
   background: #0779e4;
   color: white;
 }
-
+button.about-btn.btn-all.active:after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background: #0779e4;
+  transform: rotate(45deg);
+  left: 45%;
+  bottom: -5px;
+}
 .about-content h1 {
   font-size: 44px;
   color: #4a4a4a;
@@ -255,4 +264,85 @@ button.about-btn.btn-all.active {
   bottom: 33px;
   left: -35px;
   z-index: -1;
+}
+
+.service-header p {
+  text-align: center;
+  color: #0779e4;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.service-header h1 {
+  text-align: center;
+  width: 555px;
+  margin: auto;
+  position: relative;
+  color: #4a4a4a;
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+.service-header h1:after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 3px;
+  background: #0779e4;
+  left: 32%;
+  bottom: -20%;
+}
+.services-card {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 90px;
+}
+.card-icon {
+  text-align: center;
+}
+
+.card-icon i {
+  font-size: 40px;
+  padding: 20px;
+  background: #0779e4;
+  color: white;
+}
+
+.single-card {
+  width: calc(33% - 118px);
+}
+
+.single-card .text h2 {
+  color: #0779e4;
+  font-size: 22px;
+  text-align: center;
+}
+
+.single-card .text p {
+  text-align: center;
+  line-height: 30px;
+  color: grey;
+}
+
+.single-card .text p a {
+  color: #0779e4;
+  text-decoration: none;
+}
+
+.service-footer {
+  width: 640px;
+  margin: auto;
+}
+
+.service-footer p strong a {
+  color: #0779e4;
+  text-decoration: none;
+}
+
+.service-footer p strong {
+  color: #656565;
+}
+
+.service-footer p {
+  color: grey;
+  line-height: 30px;
 }
