@@ -216,6 +216,7 @@ button.view-btn:hover {
 button.about-btn.btn-all.active {
   background: #0779e4;
   color: white;
+  position:relative
 }
 button.about-btn.btn-all.active:after {
   position: absolute;
